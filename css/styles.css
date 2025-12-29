@@ -1,0 +1,759 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #000000;
+    
+}
+
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../assets/cars.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.menu .logo {
+    font-weight: bolder;
+    font-size: 25px;
+    color: #F61706;
+}
+
+.menu .navbar ul {
+    list-style: none;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color:#F61706;
+}
+
+#menu {
+    display: none;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+
+
+.icons {
+    display: flex;
+}
+
+
+.icons li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.icons li a{
+    color: #ffffff;
+}
+
+
+.icons li a:hover {
+    color:#F61706;
+}
+
+.icons i {
+    font-size: 25px;
+    color: #ffffff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.icons i:hover{
+    color: #F61706;
+}
+
+.header-text {
+    text-align: center;
+    width: 700px;
+}
+
+
+
+.header-text h1 {
+    color: #ffffff;
+    font-size: 50px;
+}
+
+.header-text p {
+    margin-top: 35px;
+    color: #ffffff;
+}
+
+.btn-1 {
+    display: inline-block;
+    background-color: #F61706;
+    margin-top: 35px;
+    padding: 15px 25px;
+    border-radius: 25px;
+    color: #ffffff;
+}
+
+
+.btn-1:hover {
+    color: #333437;
+}
+
+
+
+
+.services {
+    padding: 50px 0px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.services h2 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.txt-1 {
+    font-size: 18px;
+    padding: opx 200px;
+}
+
+
+.group-services {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service i {
+    font-size: 60px;
+    color: #F61706;
+    margin-bottom: 20px;
+}
+
+.service {
+    padding: 35px 25px;
+}
+
+.service h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.service p {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+
+
+
+
+.servicess {
+    padding: 50px 0px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.servicess h2 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.txt-1 {
+    font-size: 18px;
+    padding: opx 200px;
+}
+
+
+.group-servicess {
+    display: flex;
+    justify-content: space-between;
+}
+
+.servicee i {
+    font-size: 60px;
+    color: #F61706;
+    margin-bottom: 20px;
+}
+
+.servicee {
+    padding: 35px 25px;
+}
+
+.servicee h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.servicee p {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.beneficio {
+    text-align: center;
+    padding: 50px 0px;
+    color: #ffffff;
+}
+
+.beneficio-txt {
+    margin-bottom: 50px;
+}
+
+.beneficio-txt h2 {
+    font-size: 55px;
+    margin-bottom: 35px;
+}
+
+
+.beneficio-txt p {
+    font-size: 18px;
+}
+
+.imgs {
+    display: flex;
+    justify-content: center;
+} 
+
+.imgs img {
+    width: 250px;
+    margin: 0px 10px;
+}
+
+.bg-sec {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../assets/carrorange.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 35px 0px;
+}
+
+.bg-txt {
+    padding: 100px 0px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.bg-txt h2 {
+    font-size: 55px;
+    margin-bottom: 35px;
+}
+
+.bg-txt p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.titulo-txt h2 {
+   
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.prices {
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+}
+
+.price {
+    text-align: center;
+}
+
+.price h3 {
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+.price ul li {
+    list-style: none;
+     font-size: 18px;
+}
+
+
+.formulario {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+form {
+    padding: 50px;
+    width: 500px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+form h2 {
+    font-size: 25px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.mapa {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    filter: grayscale(20%) invert(95%);
+}
+
+.input-container {
+    position: relative;
+}
+
+
+.input-container > i {
+    padding: 14px;
+    border-radius: 50%;
+    background-color: #F61706;
+    color: #ffffff;
+    position: absolute;
+    font-size: 20px;
+    top: 4px;
+    left: 10px;
+}
+
+
+
+.input-container > input, textarea {
+    padding: 17px 15px 17px 65px;
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 0;
+    background-color: transparent;
+    border: 2px solid #F61706;
+    font-size: 16px;
+    outline: none;
+    color: #ffffff;
+}
+
+
+textarea {
+    font-family: 'Poppins', sans-serif;
+    height: 150px;
+}
+
+
+::placeholder {
+    color: #a0a0a0;
+    font-size: 16px;
+}
+
+
+.btn {
+    background-color: #F61706;
+    padding: 17px 30px;
+    width: 100%;
+    border: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 0px;
+    color: #FFFFFF;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+
+.contacto {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../assets/ciudadlluvia.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 35px 0px;
+}
+
+.bg-txt {
+    padding: 100px 0px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.bg-txt h2 {
+    font-size: 55px;
+    margin-bottom: 35px;
+}
+
+.bg-txt p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #a0a0a0;
+}
+
+span {
+    color: #F61706;
+}
+
+
+.review {
+    background-color: #000000;
+}
+
+.review h2 {
+    margin-top: 75px;
+    font-size: 55px;
+    margin-bottom: 35px;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+
+.review p {
+    margin-top: 75px;
+    font-size: 18px;
+    margin-bottom: 35px;
+    color: #ffffff;
+    text-align: center;
+}
+.review .box-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+    flex-wrap: wrap;
+}
+
+.review .box-container .box {
+    width: 20rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    box-shadow: 0, 3rem 5rem rgba(0, 0, 0, .3);
+    background: #0f0f0f;
+    margin: 4rem 2rem;
+}
+
+.review .box-container .box h6 {
+    font-size: 18px;
+    margin-bottom: 35px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.review .box-container .box img {
+    height: 8.5rem;
+    width: 8.5rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -4rem;
+    border: .2rem solid #F61706;
+    border-left: .2rem solid #F61706;
+    border-bottom: .2rem solid #F61706;
+}
+
+.review .box-container .box h3 {
+    font-size: 2rem;
+    color: #F61706;
+    padding: 0 .5rem;
+}
+
+.review .box-container .box p {
+    font-size: 20px;
+    color: bisque;
+    padding: 1.3rem .1rem;
+}
+
+.review .box-container .box .stars i {
+    font-size: 1.6rem;
+    color: darkorange;
+    padding: 1.3rem .1rem;
+}
+
+
+.btn-2 {
+    padding: 10px 25px;
+    border: 0px;
+    
+}
+
+.btn-3 {
+    background-color: #F61706;
+    padding: 10px 25px;
+    border: 0px;
+    color: #ffffff;
+    margin-top: 15px;
+
+}
+
+
+.footer {
+    padding: 50px;
+    background-color: #0f0f0f;
+}
+
+.SOSGRUA {
+    font-weight: bolder;
+    font-size: 25px;
+    color: #F61706;
+}
+
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.link ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+
+.link ul li {
+    margin-right: 50px;
+}
+
+.link ul li a {
+    color: #ffffff;
+    font-size: 17px;
+    
+}
+
+.link ul li a:hover {
+    color: #F61706;
+}
+
+
+@media (max-width:991px) {
+
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #333437;
+        display: none;
+    }
+
+    .menu .navbar  ul li {
+        width: 100%;
+    }
+
+    .menu .navbar  ul li a:hover {
+        color: #F61706;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+    
+    .menu-icono {
+        width: 25px;
+    }
+
+
+    .icons {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #333437;
+        display: none;
+    }
+
+    .icons i {
+        width: 100%;
+    }
+
+    .icons i a:hover {
+        color: #F61706;
+    }
+    
+
+    .header {
+        height: 50vh;
+    }
+
+    .header-text {
+        margin-top: 50px;
+        padding: 0px 25px;
+    }
+
+
+    .service {
+        padding: 30px;
+    }
+
+
+    .txt-1 {
+        padding: 30px;
+        margin-bottom: 35px;
+    }
+
+    .group-services {
+        flex-direction: column;
+    }
+
+    .service {
+        margin-bottom: 20px;
+    }
+
+
+
+    .servicee {
+        padding: 30px;
+    }
+
+
+    .txt-1 {
+        padding: 30px;
+        margin-bottom: 35px;
+    }
+
+    .group-servicess {
+        flex-direction: column;
+    }
+
+    .servicee {
+        margin-bottom: 20px;
+    }
+
+    
+
+
+    .beneficio {
+        padding: 0px 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .beneficio-txt p {
+        margin: 0;
+    }
+
+    .imgs {
+        flex-direction: column;
+        align-items: center;
+    }
+     .imgs img {
+        margin: 15px 0px 0px 0px;
+   }
+
+
+    .bg-txt {
+        padding: 30px;
+    }
+
+
+    .prices {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .price {
+        margin-bottom: 15px;
+    }
+
+
+
+    .formulario {
+        padding: 30px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    form {
+        width: 100%;
+    }
+
+
+    .footer {
+        padding: 30px;
+    }
+
+     .ft {
+        text-align: center;
+        flex-direction: column;
+     }
+     
+     .enlace formn {
+        align-items: center;
+     }
+
+
+
+     
+    .footer {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #333437;
+        display: none;
+    }
+
+    .link ul li a {
+        width: 100%;
+    }
+
+    .link ul li a:hover {
+        color: #F61706;
+    }
+    
+
+    } 

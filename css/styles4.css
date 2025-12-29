@@ -1,0 +1,531 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #000000;
+    
+}
+
+span {
+    color: #F61706;
+}
+
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.menu .logo {
+    font-weight: bolder;
+    font-size: 25px;
+    color: #F61706;
+}
+
+.menu .navbar ul {
+    list-style: none;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color:#F61706;
+}
+
+#menu {
+    display: none;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+
+.icons {
+    display: flex;
+}
+
+
+.icons i {
+    font-size: 55px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.icons i:hover{
+    color: #F61706;
+}
+
+.header-text {
+    text-align: center;
+    width: 700px;
+}
+
+
+.header-text h1 {
+    color: #ffffff;
+    font-size: 50px;
+}
+
+.header-text p {
+    margin-top: 35px;
+    color: #ffffff;
+}
+
+.btn-1 {
+    display: inline-block;
+    background-color: #F61706;
+    margin-top: 35px;
+    padding: 15px 25px;
+    border-radius: 25px;
+    color: #ffffff;
+}
+
+
+.btn-1:hover {
+    color: #333437;
+}
+
+
+.services {
+    padding: 50px 0px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.services h2 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.txt-1 {
+    font-size: 18px;
+    padding: opx 200px;
+}
+
+
+.group-services {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service i {
+    font-size: 60px;
+    color: #F61706;
+    margin-bottom: 20px;
+}
+
+.service {
+    padding: 35px 25px;
+}
+
+.service h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.service p {
+    font-size: 18px;
+}
+
+
+.beneficio {
+    text-align: center;
+    padding: 50px opx;
+    color: #ffffff;
+}
+
+.beneficio-txt {
+    margin-bottom: 50px;
+}
+
+.beneficio-txt h2 {
+    font-size: 55px;
+    margin-bottom: 35px;
+}
+
+
+.beneficio-txt p {
+    font-size: 18px;
+}
+
+.imgs {
+    display: flex;
+    justify-content: center;
+} 
+
+.imgs img {
+    width: 250px;
+    margin: 0px 10px;
+}
+
+.bg-sec {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../assets/carrorange.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 35px 0px;
+}
+
+.bg-txt {
+    padding: 100px 0px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.bg-txt h2 {
+    font-size: 55px;
+    margin-bottom: 35px;
+}
+
+.bg-txt p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.bg-txt i {
+    font-size: 55px;
+}
+
+.prices {
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+}
+
+.price {
+    text-align: center;
+}
+
+.price h3 {
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+.price ul li {
+    list-style: none;
+     font-size: 18px;
+}
+
+
+.formulario {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+form {
+    padding: 50px;
+    width: 500px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+form h2 {
+    font-size: 25px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.mapa {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    filter: grayscale(20%) invert(95%);
+}
+
+.input-container {
+    position: relative;
+}
+
+
+.input-container > i {
+    padding: 14px;
+    border-radius: 50%;
+    background-color: #F61706;
+    color: #ffffff;
+    position: absolute;
+    font-size: 20px;
+    top: 4px;
+    left: 10px;
+}
+
+
+
+.input-container > input, textarea {
+    padding: 17px 15px 17px 65px;
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 0;
+    background-color: transparent;
+    border: 2px solid #F61706;
+    font-size: 16px;
+    outline: none;
+    color: #ffffff;
+}
+
+
+textarea {
+    font-family: 'Poppins', sans-serif;
+    height: 150px;
+}
+
+
+::placeholder {
+    color: #a0a0a0;
+    font-size: 16px;
+}
+
+
+.btn {
+    background-color: #F61706;
+    padding: 17px 30px;
+    width: 100%;
+    border: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 0px;
+    color: #FFFFFF;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+
+.bg-secc {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../assets/trabajo.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 35px 0px;
+}
+
+.bg-txt {
+    padding: 100px 0px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.bg-txt h2 {
+    font-size: 55px;
+    margin-bottom: 35px;
+}
+
+.bg-txt p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #a0a0a0;
+}
+
+
+
+.footer {
+    padding: 150px 0px;
+}
+
+.ft {
+    display: flex;
+    justify-content: space-between;
+}
+
+.enlace h3 {
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+.enlace li {
+    list-style: none;
+}
+
+.enlace a {
+    color: #ffffff;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.enlace form {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    
+}
+
+.btn-2 {
+    padding: 10px 25px;
+    border: 0px;
+    
+}
+
+.btn-3 {
+    background-color: #F61706;
+    padding: 10px 25px;
+    border: 0px;
+    color: #ffffff;
+    margin-top: 15px;
+
+}
+
+
+
+
+@media (max-width:991px) {
+
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #333437;
+        display: none;
+    }
+
+    .menu .navbar  ul li {
+        width: 100%;
+    }
+
+    .menu .navbar  ul li a:hover {
+        color: #F61706;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+    
+    .menu-icono {
+        width: 25px;
+    }
+
+    .header {
+        height: 50vh;
+    }
+
+    .header-text {
+        margin-top: 50px;
+        padding: 0px 25px;
+    }
+
+
+    .service {
+        padding: 30px;
+    }
+
+
+    .txt-1 {
+        padding: 30px;
+        margin-bottom: 35px;
+    }
+
+    .group-services {
+        flex-direction: column;
+    }
+
+    .service {
+        margin-bottom: 20px;
+    }
+
+    .beneficio {
+        padding: 0px 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .beneficio-txt p {
+        margin: 0;
+    }
+
+    .imgs {
+        flex-direction: column;
+        align-items: center;
+    }
+     .imgs img {
+        margin: 15px 0px 0px 0px;
+   }
+
+
+    .bg-txt {
+        padding: 30px;
+    }
+
+
+    .prices {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .price {
+        margin-bottom: 15px;
+    }
+
+
+
+    .formulario {
+        padding: 30px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    form {
+        width: 100%;
+    }
+
+
+    .footer {
+        padding: 30px;
+    }
+
+     .ft {
+        text-align: center;
+        flex-direction: column;
+     }
+     
+     .enlace formn {
+        align-items: center;
+     }
+
+    }
