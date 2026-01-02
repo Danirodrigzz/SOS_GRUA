@@ -1,69 +1,135 @@
-# SOS Grúa Express - Modelo de Sitio Web
+# 🚑 SOS Grúa Express - Plataforma de Asistencia Vehicular
 
-Este proyecto es un modelo de sitio web para un servicio de grúas y asistencia vehicular llamado **SOS Grúa Express**. Permite a los usuarios solicitar servicios, ver planes de pago y contactar con la empresa.
+![Version](https://img.shields.io/badge/version-1.0.0-blue) ![PHP](https://img.shields.io/badge/PHP-8.0%2B-purple) ![Status](https://img.shields.io/badge/estado-En%20Desarrollo-green)
 
-## 📂 Nueva Estructura del Proyecto
-
-El proyecto ha sido reorganizado para mantener un orden lógico y profesional:
-
-*   **`assets/`**: Contiene todas las imágenes (`.png`, `.jpg`) y videos (`.mp4`) del sitio.
-*   **`css/`**: Contiene todos los archivos de estilos (`styles.css`, `info.css`, etc.).
-*   **`php/`**: Contiene la lógica del backend (`conexion.php` para la base de datos y `send.php` para el formulario).
-*   **`pages/`**: Contiene las páginas HTML secundarias organizadas por módulos:
-    *   `auth/`: Páginas de Login y Registro.
-    *   `pagos/`: Páginas relacionadas con los paquetes y métodos de pago.
-    *   `info/`: Páginas informativas (Sobre nosotros, Servicios, etc.).
-*   **`index.php`**: Página principal del sitio.
-*   **`contacto.php`**: Página de contacto que integra el formulario.
+Bienvenido a **SOS Grúa Express**, una solución web moderna diseñada para facilitar la conexión entre conductores con emergencias vehiculares y proveedores de servicios de grúa y asistencia técnica. Este proyecto simula una plataforma completa donde los usuarios pueden solicitar, cotizar y gestionar servicios de auxilio vial de manera rápida y eficiente.
 
 ---
 
-## 🚀 ¿Cómo iniciar el proyecto?
+## 🌟 Descripción del Proyecto
 
-Tienes dos opciones para ejecutar este proyecto en tu máquina local:
+El objetivo principal de **SOS Grúa Express** es minimizar el estrés de las emergencias en carretera. La página ofrece una interfaz amigable y responsiva que permite a los usuarios:
 
-### Opción 1: Usando la terminal (Recomendado)
-Si tienes PHP instalado en tu sistema o accesible desde la terminal:
-
-1.  Abre una terminal en la carpeta raíz del proyecto.
-2.  Ejecuta el siguiente comando para iniciar un servidor local:
-    ```bash
-    php -S localhost:8000
-    ```
-3.  Abre tu navegador y entra a: [http://localhost:8000](http://localhost:8000)
-
-### Opción 2: Usando XAMPP (Apache)
-Si prefieres usar la interfaz de XAMPP:
-
-1.  Asegúrate de que la carpeta del proyecto esté dentro de `C:\xampp\htdocs\`.
-2.  Abre el **Panel de Control de XAMPP**.
-3.  Inicia el módulo **Apache** (botón "Start").
-4.  Inicia el módulo **MySQL** (botón "Start").
-5.  Abre tu navegador y entra a: [http://localhost/sosgrua - modelo/](http://localhost/sosgrua%20-%20modelo/)
+*   **Solicitar Servicios Urgentes**: Desde grúas hasta recarga de baterías o gasolina.
+*   **Consultar Tarifas y Planes**: Visualización clara de paquetes de suscripción o servicios puntuales.
+*   **Conocer al Equipo**: Transparencia con perfiles de los conductores y técnicos.
+*   **Contacto Directo**: Formularios integrados y enlaces a WhatsApp para atención inmediata.
 
 ---
 
-## 🗄️ Base de Datos (MySQL)
+## 🚀 Características Principales
 
-El formulario de contacto guarda la información en una base de datos MySQL local.
+El sistema cuenta con diversos módulos funcionales:
 
-**Configuración:**
-*   **Base de datos**: `formulario`
-*   **Tabla**: `datos`
-*   **Usuario**: `root`
-*   **Contraseña**: (vacío)
-*   **Host**: `localhost`
+### 🛠️ Servicios Ofrecidos
+*   **Servicio de Grúa**: Remolque para todo tipo de vehículos.
+*   **Recarga de Batería**: Asistencia con "Battery Booster".
+*   **Abastecimiento de Combustible**: Envío de gasolina de emergencia.
+*   **Cambio de Neumáticos**: Asistencia rápida para llantas pinchadas.
+*   **Cerrajería Vial**: Apertura de vehículos sin daños.
+*   **Servicios Especiales**: Maniobras de extracción complejas.
 
-Si usas XAMPP, asegúrate de tener el módulo MySQL encendido para que el envío de formularios funcione correctamente.
+### 📦 Paquetes de Suscripción
+Visualización de planes con precios adaptados:
+*   **Premium ($75)**: Cobertura completa.
+*   **Medio ($48)**: Servicios esenciales.
+*   **Normal ($32)**: Asistencia básica.
+
+### 👤 Gestión de Usuarios
+*   Páginas maquetadas para **Login** y **Registro** de usuarios.
+*   Simulación de flujo de contratación de servicios.
 
 ---
 
-## 🛠️ Tecnologías
-*   **HTML5**
-*   **CSS3** (Estilos personalizados y responsivos)
-*   **PHP** (Backend básico)
-*   **MySQL** (Base de datos)
-*   **JavaScript** (Interacciones básicas)
+## 📂 Estructura del Directorio
+
+El proyecto sigue una arquitectura organizada para facilitar su mantenimiento y escalabilidad:
+
+```
+sosgrua - modelo/
+├── 📁 assets/          # Recursos multimedia (imágenes, iconos, videos)
+├── 📁 css/             # Hojas de estilo (CSS) para el diseño visual
+│   ├── styles.css      # Estilos globales
+│   └── styles.app.css  # Estilos específicos de la aplicación
+├── 📁 js/              # (Opcional) Scripts de JavaScript
+├── 📁 pages/           # Vistas secundarias del sitio
+│   ├── 📁 auth/        # Módulos de autenticación (Login, Registro)
+│   ├── 📁 pagos/       # Módulos de pasarela de pago y selección de planes
+│   └── 📁 info/        # Información estática adicional
+├── 📁 php/             # Lógica del servidor
+│   ├── conexion.php    # (Requiere creación) Conexión a Base de Datos MySQL
+│   └── send.php        # Procesamiento de formularios de contacto
+├── index.php           # Página de inicio (Landing Page)
+├── contacto.php        # Página dedicada al formulario de contacto
+├── solicitar.php       # Página de solicitud de servicios
+└── vercel.json         # Configuración para despliegue en Vercel
+```
 
 ---
-*Organizado y documentado automáticamente por tu Asistente de IA.*
+
+## � Tecnologías Utilizadas
+
+Este proyecto ha sido construido utilizando estándares web modernos:
+
+*   **Frontend**:
+    *   **HTML5**: Estructura semántica.
+    *   **CSS3**: Diseño responsivo, Flexbox, Grid y animaciones.
+    *   **FontAwesome**: Iconografía vectorial.
+*   **Backend**:
+    *   **PHP**: Lenguaje principal para la lógica del servidor y manejo de formularios.
+*   **Base de Datos**:
+    *   **MySQL**: Almacenamiento de datos de contacto y registros (requiere configuración local).
+*   **Infraestructura**:
+    *   **XAMPP**: Entorno de desarrollo local recomendado.
+    *   **Vercel**: Configurado para despliegue en la nube (serverless functions para PHP).
+
+---
+
+## ⚙️ Instalación y Configuración
+
+### Prerrequisitos
+*   Tener instalado **XAMPP** (o cualquier servidor LAMP/WAMP/MAMP).
+*   Navegador web moderno.
+
+### Pasos para Ejecutar Localmente
+
+1.  **Clonar/Descargar el Repositorio**:
+    Coloca la carpeta del proyecto dentro del directorio `htdocs` de tu instalación de XAMPP (usualmente `C:\xampp\htdocs\`).
+
+2.  **Configurar la Base de Datos**:
+    *   Abre **phpMyAdmin** (`http://localhost/phpmyadmin`).
+    *   Crea una base de datos llamada `formulario`.
+    *   Crea una tabla `datos` con las columnas necesarias (nombre, telefono, correo, mensaje, etc.) para que coincida con `php/send.php`.
+
+    > **Nota:** Verifica que los credenciales en `php/conexion.php` (si existe) o `php/send.php` coincidan con tu configuración local (usuario por defecto: `root`, sin contraseña).
+
+3.  **Iniciar Servidores**:
+    *   Abre el panel de control de XAMPP.
+    *   Inicia los servicios **Apache** y **MySQL**.
+
+4.  **Acceder al Sitio**:
+    Abre tu navegador y visita:
+    `http://localhost/sosgrua - modelo/`
+
+---
+
+## ☁️ Despliegue en Vercel
+
+Este proyecto incluye un archivo `vercel.json` configurado para desplegar aplicaciones PHP en Vercel.
+
+1.  Asegúrate de instalar Vercel CLI o conectar tu repositorio de GitHub a Vercel.
+2.  Vercel detectará automáticamente la configuración y desplegará tanto los archivos estáticos como los scripts PHP usando el runtime `vercel-php`.
+
+---
+
+## 🤝 Contribución
+
+Si deseas contribuir a este proyecto:
+1.  Haz un Fork del repositorio.
+2.  Crea una rama con tu nueva funcionalidad (`git checkout -b feature/NuevaFuncionalidad`).
+3.  Realiza tus cambios y haz commit (`git commit -m 'Agrega nueva funcionalidad'`).
+4.  Haz push a la rama (`git push origin feature/NuevaFuncionalidad`).
+5.  Abre un Pull Request.
+
+---
+*Desarrollado con ❤️ para servicios de asistencia venezolana.*
